@@ -2,7 +2,7 @@ CC = gcc
 
 TARGET = mysh
 
-SRC = mysh2.c
+SRC = mysh.c
 
 all:
 	$(CC) -o $(TARGET) $(SRC)
