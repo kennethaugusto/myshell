@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 MyShell: A custom command line interface
 Welcome to MyShell, a custom shell designed to interact with the operating system using a command line interface. MyShell has built-in commands and has the ability to execute external system commands.
 =======
@@ -6,7 +5,6 @@ Vallika Nayak (vn188) & Kenneth Augusto (kma234)
 
 MyShell: A custom command line interface
   Welcome to MyShell, a custom shell designed to interact with the operating system using a command line interface. MyShell has built-in commands and has the ability to execute external system commands.
->>>>>>> 468716be6236816a5d819ccb4bb8be8291048a18
 Built-in Commands:
 - exit: Exits shell. This command will terminate the shell session.
 - cd [directory]: Changes the current working directory to a specifed directory. If no directory is specified, it changes to the home directory of the current user.
@@ -23,7 +21,6 @@ Special Features:
 - Output Redirection ('>'): Redirects output of the command to the output file, overwriting contents of the output file if it exists. If the output file does not exist, it is created.
 - Append Output Redirection ('>>'): Similar to output redirection, but instead of overwriting contents of the output file, the output of the command is appended to the end of the output file. If the output file does not exist, it is created.
 Usage:
-<<<<<<< HEAD
 - To use MyShell, compile the source code using a C compiler and then run generated executable. MyShell can be invoked without arguments for interactive mode or with a script file for batch mode execution.
 =======
 - To use MyShell, compile the source code using a C compiler and then run generated executable. MyShell can be invoked without arguments for interactive mode or with a script file for batch mode execution.
@@ -77,4 +74,7 @@ The following are some (but not all) of the test cases we used to test our code.
   - Test Case 14: Non-Existent Directory
     - Input: cd non_existent_dir
     - Expected Output: Print "No directory 'non_existent_dir' found."
->>>>>>> 468716be6236816a5d819ccb4bb8be8291048a18
+
+Results: 
+
+readme 10/10 compilation 10/10 Basic features Execute program with specified path and arguments 10/10 Execute program using search 10/10 cd and pwd 5/5 which 5/5 -- 30/30 Advanced features Wildcards 2/10 (ls *.txt ls: cannot access '*.txt': No such file or directory) Single redirection 5/10 (redirection does not print to file) Complex redirection 2/10 (command output errors) Pipes 2/10 (command output errors) Conditionals 2/10 (incorrect output) -- 13/50
