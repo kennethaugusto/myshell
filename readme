@@ -1,0 +1,80 @@
+<<<<<<< HEAD
+MyShell: A custom command line interface
+Welcome to MyShell, a custom shell designed to interact with the operating system using a command line interface. MyShell has built-in commands and has the ability to execute external system commands.
+=======
+Vallika Nayak (vn188) & Kenneth Augusto (kma234)
+
+MyShell: A custom command line interface
+  Welcome to MyShell, a custom shell designed to interact with the operating system using a command line interface. MyShell has built-in commands and has the ability to execute external system commands.
+>>>>>>> 468716be6236816a5d819ccb4bb8be8291048a18
+Built-in Commands:
+- exit: Exits shell. This command will terminate the shell session.
+- cd [directory]: Changes the current working directory to a specifed directory. If no directory is specified, it changes to the home directory of the current user.
+- clear: Clears terminal screen, removing all previously displayed commands and outputs.
+- dir [directory]: Lists contents of the specified directory. If no directory is specified, it lists the contents of the current directory.
+- environ: Displays all the environment variables and their values.
+- echo [message]: Prints specified message to the terminal.
+- help: Shows help documentation (this!), providing a brief description of all the built-in commands supported by MyShell.
+External Commands:
+- MyShell can execute any external commands available in the system's PATH. This allows users to run programs and scripts just as they would in any standard shell environment.
+Special Features:
+- Input/Output Redirection: MyShell supports input and output redirection using '<', '>', and '>>' symbols for reading or writing to a file.
+- Input Redirection ('<'): Redirects input of the command from specified file instead of the keyboard. This allows the command to read its input from the file.
+- Output Redirection ('>'): Redirects output of the command to the output file, overwriting contents of the output file if it exists. If the output file does not exist, it is created.
+- Append Output Redirection ('>>'): Similar to output redirection, but instead of overwriting contents of the output file, the output of the command is appended to the end of the output file. If the output file does not exist, it is created.
+Usage:
+<<<<<<< HEAD
+- To use MyShell, compile the source code using a C compiler and then run generated executable. MyShell can be invoked without arguments for interactive mode or with a script file for batch mode execution.
+=======
+- To use MyShell, compile the source code using a C compiler and then run generated executable. MyShell can be invoked without arguments for interactive mode or with a script file for batch mode execution.
+- Specifically, cd into the folder holding mysh.c, and then use command "make". Then, use the usual "./mysh" for Interactive Mode, or either cat myscript.sh or cat myscript.sh | ./mysh for Batch Mode with or without a specified file.
+Testing:
+The following are some (but not all) of the test cases we used to test our code.
+- Input/Output Redirection
+  - Test Case 1: Redirect Input from File
+    - Input: ./mysh < input.txt
+    - Expected Output: Execute commands from input.txt
+  - Test Case 2: Redirect Output to File
+    - Input: ls > output.txt
+    - Expected Output: List directory contents to output.txt
+  - Test Case 3: Redirect Output to Append File
+    - Input: echo "Hello" >> output.txt
+    - Expected Output: Append "Hello" to output.txt
+  - Test Case 4: Redirect Input and Output
+    - Input: ./mysh < input.txt > output.txt
+    - Expected Output: Execute commands from input.txt and redirect output to output.txt
+- Pipes
+  - Test Case 5: Pipe Two Commands
+    - Input: ls | wc -l
+    - Expected Output: Count lines of directory contents
+  - Test Case 6: Pipe Multiple Commands
+    - Input: ls | grep .txt | wc -l
+    - Expected Output: Count lines of .txt files in directory
+- Built-in Commands
+  - Test Case 7: Change Directory
+    - Input: cd test_dir
+    - Expected Output: Change to directory test_dir
+  - Test Case 8: List Directory
+    - Input: dir
+    - Expected Output: List contents of current directory
+  - Test Case 9: Print Environment Variables
+    - Input: environ
+    - Expected Output: Display environment variable values
+  - Test Case 10: Display Help
+    - Input: help
+    - Expected Output: Display help information
+- Wildcard Expansion
+  - Test Case 11: Wildcard Expansion
+    - Input: ls *.txt
+    - Expected Output: List .txt files in directory
+  - Test Case 12: No Matches Found
+    - Input: ls *.xyz
+    - Expected Output: Print "No matches found for '*.xyz'."
+- Error Handling
+  - Test Case 13: Non-Existent Command
+    - Input: unknown_command
+    - Expected Output: Print "Command or executable not recognized."
+  - Test Case 14: Non-Existent Directory
+    - Input: cd non_existent_dir
+    - Expected Output: Print "No directory 'non_existent_dir' found."
+>>>>>>> 468716be6236816a5d819ccb4bb8be8291048a18
